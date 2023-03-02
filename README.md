@@ -40,4 +40,9 @@ Use float64 whenever possible, because math package uses it a lot.
 
 Go string is a sequence of variable-width characters (1-4 bytes), and is immutable arrays of bytes.
 
+### Control Structures
+
+Every case in switch statement is exclusive. They are examined from the first to the last and if some case meets, its code segment executes, then the whole statement ends. However if `fallthrough` added, the remaining cases will be all executed until a case with no `fallthrough` hit.
+
+In a for-range construct, the `val` is copyied from the original, so you cannot modify the original value in collection by simply changing it.
 
